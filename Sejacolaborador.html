@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/formulario.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Script-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <!--Esta meta é exclusiva para Internet Explorer (introduzido no IE8), 
+    ela pode configurar a página para ser renderizada como em outra versão do Internet Explorer.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">     
+    <!--Um elemento de viewport <meta> fornece instruções ao navegador sobre como controlar a dimensão e o dimensionamento das páginas.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/formulario.css">
+
+    <title>Colaboradores</title>
+</head>
+
+<body style="background-color: #212121">
+    
+    <style type="text/css">
+        a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }
+    </style>
+    <header class="Menu principal">
+
+        
+    </header>
+    <div>
+        <h1 id="titulo">Cadastro de Colaboradores</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+
+    <!-- Início do formulário -->
+    <form>
+
+        <fieldset class="grupo">
+            <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <!-- Campo de email com-->
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+        <div class="campo">
+            <label><strong>Qual área deseja atuar na Beer pub</strong></label>
+            <label>
+                <input type="radio" name="colaborador" value="vende" checked>Vendedor
+            </label>
+            <label>
+                <input type="radio" name="colaborador" value="entrega">Entregador
+            </label>
+            <label>
+                <input type="radio" name="colaborador" value="repoem">Repositor
+            </label>
+        </div>
+
+        <!-- Campo de experiencia, para o sujeito indicar se tem ou não experiencia -->
+        <div class="campo">
+            <label for="experiencia"><strong>Experiência</strong></label>
+            <select id="experiencia" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Sim</option>
+                <option>Não</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+            <div id="check">
+                <label><strong>Selecione em quais regiões deseja atuar</strong></label><br><br>
+                <input type="checkbox" id="Lugar1" name="Lugar1" value="TAGUA">
+                <label for="Lugar1"> Taguatinga</label>
+                <input type="checkbox" id="Lugar2" name="Lugar2" value="NORTE">
+                <label for="Lugar2"> Asa norte</label>
+                <input type="checkbox" id="Lugar3" name="Lugar3" value="AGUAS">
+                <label for="Lugar3"> Águas claras</label>
+                <input type="checkbox" id="Lugar4" name="Lugar4" value="SUDOESTE">
+                <label for="Lugar4"> Sudoeste</label>
+                <input type="checkbox" id="Lugar5" name="Lugar5" value="C#">
+                <label for="Lugar5"> Ceilandia</label>
+                <input type="checkbox" id="Lugar6" name="Lugar6" value="Python">
+                <label for="Lugar6"> Samambaia</label>
+                
+            </div>
+        </fieldset>
+
+        <!-- Caixa de texto -->
+        <div class="campo">
+            <br>
+            <label for="experiencia"><strong>Conte um pouco mais da sua experiência: </strong></label>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <!-- Botão para enviar o formulário -->
+        <button class="botao" type="submit" onsubmit="">Concluído</button>
+
+    </form>
+    
+</body>
+
+</html>

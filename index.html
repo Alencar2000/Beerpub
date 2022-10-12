@@ -1,0 +1,195 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--bootstrap-->
+    <title>BEER PUB</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Script-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+        
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+            <!--Biblioteca para trocar slide-->
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+    <script src="js/progressbar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <style type="text/css">
+            h2 {
+                color: #212121;
+                text-decoration: none;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            h3 {
+                color: white;
+                text-decoration: none;
+                text-align: center;
+            }
+
+
+            a {
+                color: white;
+                text-decoration: none;
+                text-align: center;
+                padding: 30px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        </style>
+        <!-- Container ajusta o tamanho e o conteudo que vai aparecer no site-->
+        <!-- Logo abaixo a tag nav ira conter a barra de navegação-->
+
+        <div class="container" id="nav-container">
+            <!-- Logo abaixo está uma das estruturas para usar o bootstrap com fixed top, para a barra de navegação ficar fixa-->
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                <a class="navbar-brand" href="index.html">
+                    <img id="logo" src=".//imagem/logo_pub.png" alt="Beer pub">
+                </a>
+                <div class="title">
+                    <H3>Beer Pub</H3>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
+                        <a href="index.html">Home</a>
+                        <a href="quemsomos.html">Nossa Cerveja</a>
+                        <a href="Sejacolaborador.html">Seja colaborador</a>
+                        <a href="cardapio.html">Cardapio</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Estrutura do carousel com 3 imagens-->
+
+        <div class="container-fluid">
+            <div id="mainSlider" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                    <li data-target="#mainSlider" data-slide-to="1" class="active"></li>
+                    <li data-target="#mainSlider" data-slide-to="2" class="active"></li>
+
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!-- Estrutura do botão que vai ficar em cima das imagens do carousel. Cardapio,ipa session e trabalhe conosco-->
+
+                        <img src="imagem/1216073.jpg" class="d-block w-100" alt="Projetos de bebida">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2></h2>
+                            <a href="cardapio.html" class="mainbtn">Ver cardapio</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagem/fotobebida1.jpg " class="d-block w-100" alt="Entrega">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3></h3>
+                            <a href="quemsomos.html" class="mainbtn">Ipa session</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagem/friends.jpg" class="d-block w-100" alt="quem somos">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2></h2>
+                            <a href="Sejacolaborador.html" class="mainbtn">Trabalhe conosco</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!--Icone de mudança de slide no carousel com JS antes-->
+                <a href="#mainSlider" class="carousel-control-prev" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">previous</span>
+                </a>
+                <!--Icone de mudança de slide no carousel com JS depois-->
+                <a href="#mainSlider" class="carousel-control-next" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div id="about-area">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="imagem/logo_pub.png" alt="Beer Pub">
+                        </div>
+                        <div class="col-md-6">
+                            <h3> Sobre o grupo Beer pub
+                            </h3>
+                            <p> O grupo beer pub nasceu do sonho de empreender de um jovem arrojado e dedicado, com
+                                objetivo de servir com qualidade, proporcionar sabor e variedade. Atuamos para impactar
+                                vidas por meio potencial realizador dos negócios. Investimentos em um time eficiente e
+                                comprometido, que busca a satisfação dos clientes em nosso ambiente acolhedor,
+                                apropriado para celebração dos seus melhores momentos.”</p>
+                            <p> Além de fabricar a propria cerveja contamos com uma grande rede de franquias espalhada
+                                por todo o DF, para dessa forma atender todo o publico.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src=".//js/index.js"></script>
+    <br>
+    <footer>
+        <div id="contact-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="main-title">Entre em contato conosco</h2>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-phone"></i>
+                        <p><span class="contact-tile">Ligue para:</span> (61)98102-9249</p>
+                        <p><span class="contact-tile">Horários:</span> 17:00 - 03:00</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-envelope"></i>
+                        <p><span class="contact-tile">Envie um email:</span> grupobeerpub@gmail.com</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><span class="contact-tile">Venha para o Beer pub:</span> Avenida Águas claras rua 8 norte</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+</body>
+
+</html>
